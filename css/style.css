@@ -21,12 +21,12 @@ img {
 }
 
 a {
-    text-decoration: none;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+   text-decoration: none;
+   transition: .5;
+   -webkit-transition: .5;
+   -moz-transition: .5;
+   -ms-transition: .5;
+   -o-transition: .5;
 }
 
 ul,
