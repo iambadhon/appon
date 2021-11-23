@@ -1,6 +1,0 @@
-{
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "files.autoSave": "afterDelay",
-    "liveServer.settings.port": 5501
-}

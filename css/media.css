@@ -213,20 +213,6 @@
         width: 150px;
     }
 
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
-    }
-
-    .navbar-toggler {
-        font-size: 1.5rem;
-        padding: 0.2rem .6rem;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: 0 0 5px 3px var(--primary-color);
-    }
-
     .nav_menu ul {
         text-align: center;
         background: var(--sixth-color);
@@ -716,20 +702,6 @@
 
     .nav_sticky .navbar-brand img {
         width: 120px;
-    }
-
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
-    }
-
-    .navbar-toggler {
-        font-size: 1.3rem;
-        padding: 0.2rem .6rem;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: 0 0 5px 3px var(--primary-color);
     }
 
     .nav_menu ul {
@@ -1248,20 +1220,6 @@
         width: 120px;
     }
 
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
-    }
-
-    .navbar-toggler {
-        font-size: 1.3rem;
-        padding: 0.2rem .6rem;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: 0 0 5px 3px var(--primary-color);
-    }
-
     .nav_menu ul {
         text-align: center;
         background: var(--sixth-color);
@@ -1715,6 +1673,10 @@
 
     #footer_nav .footer_nav_social ul li {
         margin: 0 2px;
+    }
+
+    #footer_nav .footer_nav_copyright h3 {
+        padding: 0 40px;
     }
 
     .scroll_to_top {

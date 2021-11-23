@@ -1,15 +1,13 @@
-/*============================google fonts start============================*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-
-/*============================google fonts end============================*/
-
-
 /*============================default css start============================*/
 * {
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,12 +19,12 @@ img {
 }
 
 a {
-   text-decoration: none;
-   transition: .5;
-   -webkit-transition: .5;
-   -moz-transition: .5;
-   -ms-transition: .5;
-   -o-transition: .5;
+    text-decoration: none;
+    transition: .5;
+    -webkit-transition: .5;
+    -moz-transition: .5;
+    -ms-transition: .5;
+    -o-transition: .5;
 }
 
 ul,
@@ -139,11 +137,11 @@ p {
     -o-transform: translateX(0) !important;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
+.main_nav .nav_menu ul li a.active {
     color: var(--primary-color) !important;
 }
 
-.navbar-light .navbar-nav .nav-link.active::after {
+.main_nav .nav_menu ul li a.active::after {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -168,6 +166,68 @@ p {
 .free_trial_btn a:hover {
     color: var(--seventh-color);
     background: var(--fifth-color);
+}
+
+.navbar .navbar-toggler {
+    padding: .2rem .6rem .4rem .6rem;
+    border-color: var(--fourth-color);
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler-icon {
+    width: 24px;
+    height: 19px;
+    background-image: none;
+    position: relative;
+    border-bottom: 3px solid var(--fourth-color);
+    transition: all .3s linear;
+}
+
+.navbar .navbar-toggler-icon::after,
+.navbar .navbar-toggler-icon::before {
+    width: 24px;
+    position: absolute;
+    height: 3px;
+    background-color: var(--fourth-color);
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all .3s linear;
+}
+
+.navbar .navbar-toggler-icon::after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    background: var(--primary-color);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(8px) rotate(-45deg);
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
+    background: var(--primary-color);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
 }
 
 /*============================nav section end============================*/
@@ -475,7 +535,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -673,7 +733,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -782,7 +842,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -891,7 +951,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -1102,7 +1162,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -1354,7 +1414,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -1586,7 +1646,7 @@ p {
     position: absolute;
     content: "";
     top: 43px;
-    left: 44.88%;
+    left: 44.8%;
     width: 45px;
     height: 1px;
     background: var(--second-color);
@@ -1757,7 +1817,7 @@ p {
 }
 
 #footer_nav .footer_nav_social {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 #footer_nav .footer_nav_social ul li {
