@@ -1802,6 +1802,14 @@ p {
     background: var(--seventh-color);
 }
 
+#footer input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+#footer textarea:focus {
+    border: 2px solid var(--primary-color);
+}
+
 /*============================footer section end============================*/
 
 
